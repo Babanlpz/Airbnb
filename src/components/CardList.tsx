@@ -1,8 +1,7 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectCards, setCards } from "../slice/cardSlice";
 import data from "../data/data.json";
+import { selectCards, setCards } from "../slice/cardSlice";
 import Card from "./Card";
 
 const CardList: React.FC = () => {
