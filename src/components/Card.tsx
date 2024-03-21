@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHeart } from "react-icons/fa";
+import { FaHeart, FaStar } from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -38,6 +38,24 @@ const Card: React.FC<CardProps> = (props) => {
           </div>
         ))}
       </Carousel>
+      <div className="px-1 py-4">
+        <div className="flex justify-between items-center gap-1">
+          <h3 className="font-bold text-sm">
+            {otherProps.city}, {otherProps.country}
+          </h3>
+          <span className="flex justify-center items-center gap-3 text-sm">
+            <FaStar />
+            {otherProps.rating}
+          </span>
+        </div>
+        <p className="text-gray-700 text-sm">
+          Proposée par: {otherProps.owner}
+        </p>
+        <p className="text-gray-700 text-sm">{otherProps.dates}</p>
+        <p className="text-gray-700 text-sm">
+          <b>{otherProps.price_per_night}€/</b> <span> par nuit</span>
+        </p>
+      </div>
     </div>
   );
 };
