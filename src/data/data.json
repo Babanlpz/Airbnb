@@ -57,7 +57,7 @@
   },
   {
     "id": 5,
-    "city": "Rio de Janeiro",
+    "city": "Rio",
     "country": "Brazil",
     "dates": "19-26 avril",
     "price_per_night": 70,
@@ -71,7 +71,7 @@
   },
   {
     "id": 6,
-    "city": "Cape Town",
+    "city": "Cape",
     "country": "South Africa",
     "dates": "19-26 avril",
     "price_per_night": 85,
